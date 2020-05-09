@@ -14,9 +14,10 @@ class Dyrektor:
         studenci = self._baza.studenci.values()
         return studenci
 
-    # TODO zaimplementowac usuwanie studenta
+    # TODO zaimplementowac usuwanie studenta - DONE
     def student_usun(self, student_id):
-        raise NotImplementedError()
+        self._baza.studenci.pop(student_id)
+        # raise NotImplementedError()
 
     # TODO zaimplementowac wyszukanie grup w których jest student
     def student_grupy(self, student_id):
